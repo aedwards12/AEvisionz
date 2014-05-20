@@ -1,0 +1,19 @@
+.hd{
+background-color: black;
+padding-top: 1em;
+padding-left: 5em;
+height: 12em;
+font-family: 'Oxygen', sans-serif;
+
+}
+.clr{
+	color: Silver;
+}
+
+h1{
+font-size: 45px;
+color: Maroon;	
+}
+body{
+	background-color: #151515;
+}

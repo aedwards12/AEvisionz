@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AEvisionz</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/my_styles.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300,400' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>  
+    <div class="container-fluid ">
+      <div class="row hd">
+      
+         <div class="col-xs-6 col-sm-3 ">
+          <h1 class="clr"><Strong style="color: Maroon">AE</Strong>visionz</h1>
+         </div>
+         <div class="col-xs-6 col-sm-3  col-md-offset-4">
+          <address class="clr">
+            <strong>AEvisionz</strong><br>
+            Serving the tri-state area<br>
+            Bronx, NYC 10458<br>
+            <abbr title="Phone">P:</abbr> (845) 750-5646
+          </address>
+
+          <address class="clr">
+            <strong>Email</strong><br>
+            <a href="mailto:#">anthony@aevisionz.com</a>
+          </address>
+         </div>
+
+      </div>  
+      <div class="row ">
+        <div id="slider1_container" class="center-block"  style="position: relative; top: 0px; left: 0px; width: 600px; height: 800px; background-color: #151515;">
+        <!-- Slides Container -->
+          <div u="slides" class="panel" style="position: relative; top: 0px; left: 0px; width: 600px; height: 800px; background-color: #151515;">
+              <div><img u="image" class="screeny"src="images/ae_web--2.jpg" /></div>
+              <div><img u="image" class="screeny"src="images/ae_web--4.jpg" /></div>
+              <div><img u="image" class="screeny"src="images/ae_web--5.jpg" /></div>
+              <div><img u="image" class="screeny"src="images/ae_web-2-2.jpg" /></div>
+              <div><img u="image" class="screeny"src="images/ae_web-1.jpg" /></div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jssor.slider.mini.js"></script>
+    <script>
+       jQuery(document).ready(function ($) {
+        var options = { $AutoPlay: true };
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    });
+
+
+       $("img", ".panel").each(function() {
+    $(this).load(function() {
+        var width = $(this).width();
+        var height = $(this).height();
+        $(this).parent().css("width", width);
+    });
+});
+    </script>
+
+  </body>
+</html>
