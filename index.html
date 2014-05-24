@@ -19,7 +19,7 @@
     <![endif]-->
   </head>
   <body>  
-    <div class="container-fluid ">
+ <!--    <div class="container-fluid ">
       <div class="row hd">
       
          <div class="col-xs-6 col-sm-3 ">
@@ -42,7 +42,7 @@
       </div>  
       <div class="row ">
         <div id="slider1_container" class="center-block"  style="position: relative; top: 0px; left: 0px; width: 600px; height: 800px; background-color: #151515;">
-        <!-- Slides Container -->
+        <!-- Slides Container 
           <div u="slides" class="panel" style="position: relative; top: 0px; left: 0px; width: 600px; height: 800px; background-color: #151515;">
               <div><img u="image" class="screeny"src="images/ae_web--2.jpg" /></div>
               <div><img u="image" class="screeny"src="images/ae_web--4.jpg" /></div>
@@ -52,7 +52,45 @@
           </div>
         </div>
       </div> 
-    </div>
+    </div> -->
+    <button class="sort" data-sort="random">Shuffle</button>
+<button class="filter" data-filter=".category-1">Filter Out</button>
+<button class="filter" data-filter="all">Filter In</button>
+
+<div id="Container" class="container">
+  <div class="mix">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+  </div>
+  <div class="mix category-1">
+    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+  <div class="mix">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    
+    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="mix category-1">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="mix">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+  <div class="mix category-1">
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+  </div>
+  <div class="mix">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="mix category-1">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="mix">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+  
+  <div class="gap"></div>
+</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -60,20 +98,38 @@
     <!-- it works the same with all jquery version from 1.x to 2.x -->
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/jssor.slider.mini.js"></script>
+   <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="main.js"></script>
     <script>
-       jQuery(document).ready(function ($) {
+    /*   jQuery(document).ready(function ($) {
         var options = { $AutoPlay: true };
         var jssor_slider1 = new $JssorSlider$('slider1_container', options);
-    });
+
+         $('#Container').mixItUp({
+          animation: {
+            animateResizeContainer: false,
+            effects: 'fade rotateX(-45deg) translateY(-10%)'
+          }
+        });
+    });*/
+$(function(){
+  $('#Container').mixItUp({
+    animation: {
+      animateResizeContainer: false,
+      effects: 'fade rotateX(-45deg) translateY(-10%)'
+    }
+  });
+})
 
 
-       $("img", ".panel").each(function() {
+/*       $("img", ".panel").each(function() {
     $(this).load(function() {
         var width = $(this).width();
         var height = $(this).height();
         $(this).parent().css("width", width);
     });
-});
+});*/
     </script>
 
   </body>

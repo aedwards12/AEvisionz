@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AEvisionz</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/my_styles.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300,400' rel='stylesheet' type='text/css'>
+    <link href="css/lightbox.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>  
+    <div class="row hd">     
+         <div class="col-xs-6 col-sm-3 ">
+          <h1 class="clr"><Strong style="color: Maroon">AE</Strong>visionz</h1>
+         </div>
+         <div class="col-xs-6 col-sm-3  col-md-offset-4">
+          <address class="clr">
+            <strong>AEvisionz</strong><br>
+            Serving the tri-state area<br>
+            Bronx, NYC 10458<br>
+            <abbr title="Phone">P:</abbr> (845) 750-5646
+          </address>
+
+          <address class="clr">
+            <strong>Email</strong><br>
+            <a href="mailto:#">anthony@aevisionz.com</a>
+          </address>
+         </div>
+
+      </div> 
+    <button class="sort" data-sort="random">Shuffle</button>
+    <button class="filter" data-filter=".portrait">Portrait</button>
+    <button class="filter" data-filter="all">Filter In</button>
+ 
+<div id="Container" class="container">
+
+  <div> <a href="images/02.jpg" data-lightbox="roadtrip" title="My girl"><img src="images/ae_web--5.jpg" class="mix portrait"/></a></div>
+  <div><a href="images/01.jpg" data-lightbox="roadtrip" title="My girl"><img src="images/ae_web--4.jpg" class="mix portrait"/></a></div>
+  <div><a href="images/03.jpg" data-lightbox="portrait" title="My girl"><img src="images/ae_web--3.jpg" class="mix portrait"/></a></div>
+  <div><a href="images/02.jpg" data-lightbox="portrait" title="My girl"><img src="images/ae_web-1.jpg" class="mix portrait"/></a></div>
+
+  <div class="gap"></div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+   
+   <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="main.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    
+    <script>
+    $(function(){
+      $('#Container').mixItUp({
+        animation: {
+          animateResizeContainer: false,
+          effects: 'fade rotateX(-45deg) translateY(-10%)'
+        }
+      });
+    })
+
+    $('a').click(function () {
+    $(this).wrap('<a href="' + $(this).attr("src") + '" rel="lightbox" />');
+    $(this).parent('a').trigger('click');
+});
+    </script>
+
+  </body>
+</html>
