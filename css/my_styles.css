@@ -4,8 +4,15 @@ padding-top: 1em;
 padding-left: 5em;
 height: 12em;
 font-family: 'Oxygen', sans-serif;
-clear: both;
+margin-top: 1em;
+}
+.btn{
+background-color: black;
+padding-top: 1em;
+padding-left: 1em;
+height: 5em;
 
+margin-bottom: 1em;
 }
 .clr{
 	color: Silver;
@@ -23,7 +30,7 @@ color: Maroon;
 body{
   background: #1C1C1C;
   text-align: center;
-  padding: 2%;
+  
 }
 
 button{
@@ -114,6 +121,25 @@ p:last-child{
    -o-transition: all 0.3s ease-out;
    transition: all 0.3s ease-out;
 }
+.testbutton {
+  font-family: helvetica;
+  color: #000000 !important;
+  font-size: 15px;
+  padding: 10px 16px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+.testbutton:hover {
+  color: #FFFFFF !important;
+  background: #468CCF;
+  background: linear-gradient(top,  #FFFFFF,  #424242);
+  background: -ms-linear-gradient(top,  #FFFFFF,  #424242);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#424242));
+  background: -moz-linear-gradient(top,  #FFFFFF,  #424242);
+}
+
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
    margin-bottom: 0;
 }
