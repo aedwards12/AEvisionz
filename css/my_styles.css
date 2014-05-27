@@ -21,7 +21,7 @@ color: Maroon;
 }
 
 body{
-  background: #68b8c4;
+  background: #1C1C1C;
   text-align: center;
   padding: 2%;
 }
@@ -60,9 +60,9 @@ p:last-child{
 
 .container .mix{
   text-align: left;
-  background: #03899c;
-  margin: 0 0 3%;
-  padding: 3%;
+  background: #BDBDBD;
+  margin: 0 0 10%;
+  padding: 1%;
   display: none;
   
   -webkit-backface-visibility: hidden;
@@ -71,9 +71,9 @@ p:last-child{
 }
 
 .container{
-  -webkit-column-count:8;
-  -moz-column-count:8;
-  column-count:8;
+  -webkit-column-count:4;
+  -moz-column-count:4;
+  column-count:4;
   
   max-height: 900px;
 }
