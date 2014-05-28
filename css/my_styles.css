@@ -6,12 +6,31 @@ height: 12em;
 font-family: 'Oxygen', sans-serif;
 margin-top: 1em;
 
+}
+#title{
+  float: left;
+  color: white; 
+}
+#white{
+  color: white;
+  font-family: "helvetica", sans-serif;
+}
 
+#address{
+  float:right;
+  margin-right: 5em;
+}
+
+ .hd h1{
+font-size: 6em;
+float: left;
+display: block;
 }
 
 .hd:link{
   color: white;
 }
+
 .btn{
 background-color: black;
 padding-top: 1em;
