@@ -5,14 +5,36 @@ padding-left: 5em;
 height: 12em;
 font-family: 'Oxygen', sans-serif;
 margin-top: 1em;
+
+background: #bfbfbf; /* Old browsers */
+background: -moz-linear-gradient(top,  #bfbfbf 0%, #141414 10%, #141414 51%, #141414 91%, #adadad 100%, #adadad 100%, #a3a3a3 100%, #b3b3b3 100%, #adadad 100%, #b3b3b3 100%, #a9a9a9 100%, #a3a3a3 100%, #aaaaaa 100%, #a9a9a9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfbfbf), color-stop(10%,#141414), color-stop(51%,#141414), color-stop(91%,#141414), color-stop(100%,#adadad), color-stop(100%,#adadad), color-stop(100%,#a3a3a3), color-stop(100%,#b3b3b3), color-stop(100%,#adadad), color-stop(100%,#b3b3b3), color-stop(100%,#a9a9a9), color-stop(100%,#a3a3a3), color-stop(100%,#aaaaaa), color-stop(100%,#a9a9a9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #bfbfbf 0%,#141414 10%,#141414 51%,#141414 91%,#adadad 100%,#adadad 100%,#a3a3a3 100%,#b3b3b3 100%,#adadad 100%,#b3b3b3 100%,#a9a9a9 100%,#a3a3a3 100%,#aaaaaa 100%,#a9a9a9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #bfbfbf 0%,#141414 10%,#141414 51%,#141414 91%,#adadad 100%,#adadad 100%,#a3a3a3 100%,#b3b3b3 100%,#adadad 100%,#b3b3b3 100%,#a9a9a9 100%,#a3a3a3 100%,#aaaaaa 100%,#a9a9a9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #bfbfbf 0%,#141414 10%,#141414 51%,#141414 91%,#adadad 100%,#adadad 100%,#a3a3a3 100%,#b3b3b3 100%,#adadad 100%,#b3b3b3 100%,#a9a9a9 100%,#a3a3a3 100%,#aaaaaa 100%,#a9a9a9 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #bfbfbf 0%,#141414 10%,#141414 51%,#141414 91%,#adadad 100%,#adadad 100%,#a3a3a3 100%,#b3b3b3 100%,#adadad 100%,#b3b3b3 100%,#a9a9a9 100%,#a3a3a3 100%,#aaaaaa 100%,#a9a9a9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfbfbf', endColorstr='#a9a9a9',GradientType=0 ); /* IE6-9 */
+
+}
+
+.hd:link{
+  color: white;
 }
 .btn{
 background-color: black;
 padding-top: 1em;
 padding-left: 1em;
 height: 5em;
-
+width: 90%;
 margin-bottom: 1em;
+}
+
+.btn h1{
+ 
+  text-align: center;
+}
+.btn a{
+  float: left;
 }
 .clr{
 	color: Silver;
@@ -28,10 +50,9 @@ color: Maroon;
 }
 
 body{
-  background: #1C1C1C;
+  background: black;
   text-align: center;
-  background-image: url("../images/background.jpg");
-  
+ /* background-image: url("../images/background.jpg");*/
 }
 
 button{
